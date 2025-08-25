@@ -17,6 +17,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <style>
+      @layer base {
+        p {
+          flex-grow: 0 !important;
+        }
+      }
+    </style>
   </head>
   <body class="">
     <header class="shadow py-3">
@@ -36,14 +43,14 @@
 
       <section
         id="products-container"
-        class="w-11/12 mx-auto py-10 grid grid-cols-12 gap-8"
+        class="w-11/12 mx-auto py-10 grid grid-cols-12 gap-4"
       >
         <!-- Products Section -->
         <section id="product-box" class="col-span-9">
           <!-- Kitchen Section -->
-          <div class="kitchen">
-            <h1 class="text-2xl font-bold mb-5">Kitchenware</h1>
-            <div class="kitchen-items grid grid-cols-3 gap-5">
+          <div class="kitchen mb-4">
+            <h1 class="text-2xl font-bold mb-4">Kitchenware</h1>
+            <div class="kitchen-items grid grid-cols-3 gap-6">
               <!-- kitechen card 1 -->
               <div class="card bg-base-100 shadow-sm p-3">
                 <figure class="h-50 rounded-lg bg-gray-100">
@@ -53,7 +60,7 @@
                     class="rounded-xl"
                   />
                 </figure>
-                <div class="card-body items-center text-center">
+                <div class="card-body items-center text-center px-0">
                   <div class="stars text-yellow-400">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -63,8 +70,10 @@
                   </div>
                   <h2 class="card-title">K. Accessories</h2>
                   <p>39.00 TK</p>
-                  <div class="card-actions">
-                    <button class="btn bg-pink-500 text-white">Buy Now</button>
+                  <div class="card-actions w-full">
+                    <button class="btn btn-block bg-pink-500 text-white">
+                      Add to card
+                    </button>
                   </div>
                 </div>
               </div>
@@ -78,7 +87,7 @@
                     class="rounded-xl"
                   />
                 </figure>
-                <div class="card-body items-center text-center">
+                <div class="card-body items-center text-center px-0">
                   <div class="stars text-yellow-400">
                     <i class="fa-regular fa-star"></i>
                     <i class="fa-regular fa-star"></i>
@@ -88,8 +97,10 @@
                   </div>
                   <h2 class="card-title">K. Accessories</h2>
                   <p>25.00 TK</p>
-                  <div class="card-actions">
-                    <button class="btn bg-pink-500 text-white">Buy Now</button>
+                  <div class="card-actions w-full">
+                    <button class="btn btn-block bg-pink-500 text-white">
+                      Add to card
+                    </button>
                   </div>
                 </div>
               </div>
@@ -103,7 +114,7 @@
                     class="rounded-xl"
                   />
                 </figure>
-                <div class="card-body items-center text-center">
+                <div class="card-body items-center text-center px-0">
                   <div class="stars text-yellow-400">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -113,8 +124,10 @@
                   </div>
                   <h2 class="card-title">Home Cooker</h2>
                   <p>49.00 TK</p>
-                  <div class="card-actions">
-                    <button class="btn bg-pink-500 text-white">Buy Now</button>
+                  <div class="card-actions w-full">
+                    <button class="btn btn-block bg-pink-500 text-white">
+                      Add to card
+                    </button>
                   </div>
                 </div>
               </div>
@@ -122,9 +135,9 @@
           </div>
 
           <!-- Sportswear Section -->
-          <div class="kitchen">
-            <h1 class="text-2xl font-bold mb-5">Sportswear</h1>
-            <div class="kitchen-items grid grid-cols-3 gap-5">
+          <div class="sportswear mb-5">
+            <h1 class="text-2xl font-bold mb-4">Sportswear</h1>
+            <div class="kitchen-items grid grid-cols-3 gap-6">
               <!-- Sportswear card 1 -->
               <div class="card bg-base-100 shadow-sm p-3">
                 <figure class="h-50 rounded-lg bg-gray-100">
@@ -134,7 +147,7 @@
                     class="rounded-xl"
                   />
                 </figure>
-                <div class="card-body items-center text-center">
+                <div class="card-body items-center text-center px-0">
                   <div class="stars text-yellow-400">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -144,8 +157,10 @@
                   </div>
                   <h2 class="card-title">Sports Back Cap</h2>
                   <p>49.00 TK</p>
-                  <div class="card-actions">
-                    <button class="btn bg-pink-500 text-white">Buy Now</button>
+                  <div class="card-actions w-full">
+                    <button class="btn btn-block bg-pink-500 text-white">
+                      Add to card
+                    </button>
                   </div>
                 </div>
               </div>
@@ -159,7 +174,7 @@
                     class="rounded-xl"
                   />
                 </figure>
-                <div class="card-body items-center text-center">
+                <div class="card-body items-center text-center px-0">
                   <div class="stars text-yellow-400">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -169,8 +184,10 @@
                   </div>
                   <h2 class="card-title">Full Jersey Set</h2>
                   <p>69.00 TK</p>
-                  <div class="card-actions">
-                    <button class="btn bg-pink-500 text-white">Buy Now</button>
+                  <div class="card-actions w-full">
+                    <button class="btn btn-block bg-pink-500 text-white">
+                      Add to card
+                    </button>
                   </div>
                 </div>
               </div>
@@ -184,7 +201,7 @@
                     class="rounded-xl"
                   />
                 </figure>
-                <div class="card-body items-center text-center">
+                <div class="card-body items-center text-center px-0">
                   <div class="stars text-yellow-400">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -194,8 +211,10 @@
                   </div>
                   <h2 class="card-title">Sports cates</h2>
                   <p>159.00 TK</p>
-                  <div class="card-actions">
-                    <button class="btn bg-pink-500 text-white">Buy Now</button>
+                  <div class="card-actions w-full">
+                    <button class="btn btn-block bg-pink-500 text-white">
+                      Add to card
+                    </button>
                   </div>
                 </div>
               </div>
@@ -203,9 +222,9 @@
           </div>
 
           <!-- Furniture Section -->
-          <div class="kitchen">
-            <h1 class="text-2xl font-bold mb-5">Furniture</h1>
-            <div class="kitchen-items grid grid-cols-3 gap-5">
+          <div class="furniture">
+            <h1 class="text-2xl font-bold mb-4">Furniture</h1>
+            <div class="kitchen-items grid grid-cols-3 gap-6">
               <!-- Furniture card 1 -->
               <div class="card bg-base-100 shadow-sm p-3">
                 <figure class="h-50 rounded-lg bg-gray-100">
@@ -215,7 +234,7 @@
                     class="rounded-xl"
                   />
                 </figure>
-                <div class="card-body items-center text-center">
+                <div class="card-body items-center text-center px-0">
                   <div class="stars text-yellow-400">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -225,8 +244,10 @@
                   </div>
                   <h2 class="card-title">Single Relax Chair</h2>
                   <p>185.00 TK</p>
-                  <div class="card-actions">
-                    <button class="btn bg-pink-500 text-white">Buy Now</button>
+                  <div class="card-actions w-full">
+                    <button class="btn btn-block bg-pink-500 text-white">
+                      Add to card
+                    </button>
                   </div>
                 </div>
               </div>
@@ -240,7 +261,7 @@
                     class="rounded-xl"
                   />
                 </figure>
-                <div class="card-body items-center text-center">
+                <div class="card-body items-center text-center px-0">
                   <div class="stars text-yellow-400">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -250,8 +271,10 @@
                   </div>
                   <h2 class="card-title">Children play</h2>
                   <p>299.00 TK</p>
-                  <div class="card-actions">
-                    <button class="btn bg-pink-500 text-white">Buy Now</button>
+                  <div class="card-actions w-full">
+                    <button class="btn btn-block bg-pink-500 text-white">
+                      Add to card
+                    </button>
                   </div>
                 </div>
               </div>
@@ -265,7 +288,7 @@
                     class="rounded-xl"
                   />
                 </figure>
-                <div class="card-body items-center text-center">
+                <div class="card-body items-center text-center px-0">
                   <div class="stars text-yellow-400">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -275,8 +298,10 @@
                   </div>
                   <h2 class="card-title">Flexible Sofa</h2>
                   <p>339.00 TK</p>
-                  <div class="card-actions">
-                    <button class="btn bg-pink-500 text-white">Buy Now</button>
+                  <div class="card-actions w-full">
+                    <button class="btn btn-block bg-pink-500 text-white">
+                      Add to card
+                    </button>
                   </div>
                 </div>
               </div>
@@ -285,10 +310,36 @@
         </section>
 
         <!-- right section -->
-        <aside id="card-box" class="col-span-3 bg-green-100">
-          cart
+        <aside id="card-box" class="col-span-3">
+          <div class="bg-white p-4">
+            <h2 class="font-semibold mb-2">Have coupon?</h2>
+            <div class="join">
+              <input class="input join-item" placeholder="Coupon code" />
+              <button class="btn bg-pink-500 text-white join-item">
+                Apply
+              </button>
+            </div>
+          </div>
+
+          <div class="cart-box bg-white mt-5 p-4">
+            <div id="card-container">
+
+            </div>
+            <div>
+              <div class="border-y py-4 border-gray-300">
+                <h2 class="font-semibold">total Price: <span id="total-price" class="text-gray-500">0 TK</span></h2>
+                <h2 class="font-semibold">Discount <span id="discount" class="text-gray-500">0 TK</span></h2>
+                <h2 class="font-semibold">Total Quantity: <span id="Quantity" class="text-gray-500">0</span></h2>
+              </div>
+              <button class="btn btn-block bg-pink-500 text-white join-item mt-5">
+                Make Purchase
+              </button>
+            </div>
+          </div>
         </aside>
       </section>
     </main>
+
+    <script src="./index.js"></script>
   </body>
 </html>
