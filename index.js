@@ -5,6 +5,11 @@ function getElement(id) {
 
 // delegation
 
-document.querySelectorAll("#btn-card").addEventListener("click", function () {
-  alert("clicked")
-});
+const cardBtns = document.querySelectorAll("#btn-card");
+
+for(const btn of cardBtns){
+  btn.addEventListener("click", function(){
+    const itemPrice = btn.parentNode.parentNode.childNodes[5].children[0];
+    console.log(itemPrice)
+  })
+}
